@@ -1,0 +1,7 @@
+[Unit]
+Description=MinIO Audit/Logger Webhook
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/webhook --log-file /var/log/audit.log
+Restart=always
